@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Template</title>
+    <link rel="image or icon" href="./assets/luffy3.png">
+    <style>
+        body{
+            width: 850px;
+        }
+        .container{
+            display: flex;
+            /* position: relative; */
+            margin-left: 550px;
+        }
+        img{
+            height: 600px;
+            width: 580px;
+            
+        }
+        .container2{
+            display: flex;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            column-gap: 10px;
+            /* position: relative; */
+            background-color: white;
+            /* border: 2px solid; */
+            width: 500px;
+            margin-top: -540px;
+            margin-left: 300px;
+            height: 30px;
+            align-items: center;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: orange;
+        }
+        ul:hover{
+            color: orange;
+            filter: drop-shadow(10px 10px 12px rgb(227, 167, 26));
+        }
+        li:hover{
+            filter: drop-shadow(12px 4px 120px 5px grey);
+
+        }
+        .lava{
+            margin-top: -90px;
+        }
+        p{
+            position: relative;
+            top: -500px;
+            left: 140px;
+        }
+        .h1{
+            /* position: relative; */
+            margin-top: -300px;
+            margin-left: 150px;
+        }
+        .para0{
+            margin-top: 540px;
+        }
+        .cl0{
+            border: 1px solid;
+            padding: 5px;
+            height: 20px;
+            width: 140px;
+            border-radius: 15px;
+            background-color: orange;
+            /* justify-items: end; */
+            color: white;
+        }
+        .para{
+            border: 1px solid white;
+            height: 350px;
+            width: 290px;
+            margin-top: 200px;
+            background: transparent;
+            opacity: 0.5;
+            box-shadow: 12px 12px 12px grey;
+        }
+        .para:hover{
+            box-shadow:2px 12px 12px grey;
+        }
+        .cl1:hover{
+            /* box-shadow: 2px 2px 5px 5px ; */
+            filter: drop-shadow(2px 2px 5px 5px grey);
+            transform: scale(1.5);
+        }
+        .h11{
+            font-size: 80px;
+            position: relative;
+            top: -900px;
+            left: 170px;
+            color: orange;
+            opacity: 0.3;
+        }
+        .cl1{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            left: 260px;
+            top: -1000px;
+            
+        }
+        .para1{
+            font-size: 20px;
+            margin-left: 90px;
+            margin-top: -450px;
+        }
+        .para_1{
+            font-size: 20px;
+            margin-left: 80px;
+            margin-top: -450px;
+        }
+        .para2{
+            margin-left: 24px;
+        }
+        .para3{
+            border: 1px solid;
+            height: 30px;
+            width: 110px;
+            padding-top: 10px;
+            padding-left: 15px;
+            background-color: orange;
+            color: white;
+            margin-left: 80px;
+            border-radius: 30px;
+        }
+        .para_3{
+            border: 1px solid;
+            height: 30px;
+            width: 150px;
+            padding-top: 10px;
+            padding-left: 15px;
+            background-color: orange;
+            color: white;
+            margin-left: 80px;
+            border-radius: 30px;
+        }
+        .md{
+            display: flex;
+            column-gap: 15px;
+        }
+        #img_1{
+            position: relative;
+            top: -500px;
+            width: 400px;
+            height: 700px;
+            opacity: 0.9;
+        }
+        #img_2{
+            position: relative;
+            top: -650px;
+            left: -260px;
+            width: 350px;
+            height: 350px;
+        }
+        #img_2:hover{
+            /* box-shadow: 5px 5px 10px 5px grey; */
+            transform: scale(1.2);
+        }
+        .container3{
+            display: grid;
+            /* row-gap: 50px; */
+            grid-template-rows: 50px 50px 50px;
+        }
+        .cl_0:hover{
+            box-shadow: 3px 3px 10px 5px orange;
+            transform: scale(1.1);
+        }
+        .cl_1{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            left: 600px;
+            top: -1000px;
+        }
+        .cl_2{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            left: 600px;
+            top: -1020px;
+        }
+        .cl_3{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            left: 600px;
+            top: -955px;
+        }
+        .img_3{
+            position: absolute;
+            /* left: 690px; */
+            width: 300px;
+            /* top: 1950px; */
+        }
+        .h12{
+            margin-top: -780px;
+            margin-left: 400px;
+            opacity: 1.5;
+        }
+        .spn{
+            opacity: 2;
+        }
+        .img_3{
+            margin-left: 820px;
+            margin-top: -750px;
+            opacity: 10;
+            height: 500px;
+        }
+        .p10{
+            font-size: 13px;
+        }
+        #para4{
+            /* border: 1px solid; */
+            margin-top: 100px;
+            height: 250px;
+            width: 340px;
+            background-color: rgb(225, 153, 108);
+            border-radius: 3%;
+            margin-left: -50px;
+        }
+        #para4:hover{
+            box-shadow: 5px 5px 10px 5px grey;
+            transform: scale(1.2);
+        }
+        .cl_4{
+            height: 80px;
+            width: 80px;
+            margin-top: -35px;
+            margin-left: -35px;
+        }
+        .container5{
+            display: flex;
+            column-gap: 68px;
+            /* margin-left: -13px; */
+        }
+        .star{
+            /* color: black; */
+            margin-top: 140px;
+            margin-left: -260px;
+            color: white;
+            font-size: 1.4em;
+            /* text-align: center; */
+        }
+        .cl_5{
+            margin-top: 160px;
+            margin-left: -180px;
+            font-size: 1.7em;
+            color: white;
+        }
+        .cl_6{
+            margin-top: 200px;
+            margin-left: -310px;
+            color: white;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        .star1{
+            /* color: black; */
+            margin-top: 140px;
+            margin-left: -270px;
+            color: white;
+            font-size: 1.5em;
+            /* text-align: center; */
+        }
+        .cl_7{
+            margin-top: 160px;
+            margin-left: -180px;
+            font-size: 1.7em;
+            color: white;
+        }
+        .cl_8{
+            margin-top: 200px;
+            margin-left: -270px;
+            color: white;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        #cl_5{
+            width: 1130px;
+            height: 800px;
+            margin-top: -350px;
+        }
+        
+        #form{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 400px;
+            border-radius: 15px;
+            background-color: white;
+            margin-left: -100px;
+            margin-top: -20px;
+            box-shadow: 3px 2px 10px 4px grey;
+        }
+        #form:hover{
+            transform: scale(1.1);
+            box-shadow: 3px 4px 5px 4px black;
+        }
+       .cl10{
+        color: white;
+        font-size: 3em;
+        margin-left: 500px;
+        margin-top: -780px;
+       }
+       #para{
+        color: white;
+        margin-top: 530px;
+        margin-left: 360px;
+        font-size: 1.2em;
+       }
+       input[value="SEND YOUR MESSAGE"]:hover{
+        transform: scale(1.1);
+       }
+       .container6{
+        display: flex;
+        column-gap: 20px;
+        margin-left: 500px;
+        margin-top: -500px;
+       }
+       .svg11:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 3px 10px 5px grey;
+       }
+       .svg1{
+        border: 2px solid white;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+       }
+       #copy{
+        margin-top: 550px;
+        margin-left:140px;
+        font-size: 1.3em;
+        color: white;
+        opacity: 0.7;
+       }
+       .id1{
+        height: 50px;
+        width: 50px;
+        /* border: 1px solid; */
+        border-radius: 10px;
+        background-color: orange;
+        /* z-index: 2; */
+        /* margin-left: 900px; */
+        position: relative;
+        top: -1600px;
+        left: 900px;
+       }
+       .id2{
+        height: 50px;
+        width: 50px;
+        /* border: 0.1px solid white; */
+        border-radius: 10px;
+        background-color: orange;
+        position: relative;
+        top: -1560px;
+        left: 885px;
+        /* margin-left: 500px; */
+       }
+       .id0{
+       box-shadow:2px 2px 10px 2px orange ;
+       }
+       .id0:hover{
+        transform: scale(1.1);
+       }
+       .DROPDOWN{
+        display: none;
+       }
+       .dropdown{
+            display: none;
+        }
+       .container2:hover .dropdown{
+            display: block;
+            background-color: antiquewhite;
+            color: black;
+        }
+        .ul_12{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/banner-bg.png" alt="banner-bg">
+    </div>
+    <p class="lava">LAVA</p>
+    <div class="container2">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">TESTMONIALS</a></li>
+            <li class="link"><a href="">DROPDOWN</a>
+            </li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+        <div class="dropdown">
+            <ul class="ul_12">
+                <li class="li">hello</li>
+                <li class="li">hieee</li>
+                <li class="li">hieee</li>
+                <li class="li">hello</li>
+                <li class="li">hello</li>
+            </ul>
+        </div>
+    </div>
+   
+    <div>
+        <h1 class="h1">Simple App that <br> We <span style="color: orange;">CREATE</span></h1>
+        <p class="para0">Lava <span style="color: blue;">HTML landing page</span>template is provided by <span style="color: blue;">TemplateMo.</span> <br>
+            You can modify and use it for your commercial websites for <br>
+            free of charge. Please do not redistribute this template ZIP file <br> 
+            for a download purpose. Or you will need to <span style="color: blue;">contact</span> us for <br> 
+            additional licensing of our template or to get a PSD file.
+        </p>
+        <p class="cl0">KNOW US BETTER</p>
+    </div>
+    <div class="md">
+    <div class="coontainer2">
+        <p class="para"><h1 class="h11">01</h1>
+            <img class="cl1" src="./assets/features-icon-1.png" alt="">
+            <p class="para1">Trend Analysis</p>
+            <p class="para2">Curabitur pulvinar vel odio sed sagaittis. 
+                <br><span style="margin-left: 33px;">Nam maximus ox diam,nec</span>
+                <br><span style="margin-left: 65px;">consectator diam.</span>
+                <p class="para3">READ MORE</p>
+            </p>
+        </p>
+    </div>
+    <div class="coontainer2">
+        <p class="para"><h1 class="h11">02</h1>
+            <img class="cl1" src="./assets/features-icon-2.png" alt="">
+            <p class="para_1">Site Optimization</p>
+            <p class="para2">Curabitur pulvinar vel odio sed sagaittis. 
+                <br><span style="margin-left: 33px;">Nam maximus ox diam,nec</span>
+                <br><span style="margin-left: 65px;">consectator diam.</span>
+                <p class="para_3">DISCOVER MORE</p>
+            </p>
+        </p>
+    </div>
+    <div class="coontainer2">
+        <p class="para"><h1 class="h11">03</h1>
+            <img class="cl1" src="./assets/features-icon-3.png" alt="">
+            <p class="para1">Email Design</p>
+            <p class="para2">Curabitur pulvinar vel odio sed sagaittis. 
+                <br><span style="margin-left: 33px;">Nam maximus ox diam,nec</span>
+                <br><span style="margin-left: 65px;">consectator diam.</span>
+                <p class="para3">MORE DETAIL</p>
+            </p>
+        </p>
+    </div>
+    </div>
+    <div>
+        <img id="img_1" src="./assets/left-bg-decor.png" alt="">
+        <img id="img_2" src="./assets/left-image.png" alt="">
+    </div>
+    <div class="container3">
+    <img class="cl_0 cl_1" src="./assets/about-icon-01.png" alt="">
+    <p style="margin-left: 560px; font-size: 1.2rem; font-style: oblique;  margin-top: -550px;">vestibulum pulvinar rhoncos</p>
+    <br>
+    <p style="opacity: 0.7; margin-top: -620px; margin-left: 560px;">Duis nisi urna, dapibus sed euismod ac, scelerisque et <br>sapien. Cras nisi ex,rhoncus eget urna sit amet,<br>posure ullamcorper risus.</p>
+    <img class="cl_0 cl_2" src="./assets/about-icon-01.png" alt="">
+    <p style="margin-left: 560px; font-size: 1.1rem; font-style: inherit;  margin-top: -590px;">Sed blandit quam in veilt</p>
+    <p style="opacity: 0.7; margin-top: -560px; margin-left: 560px;">You can <span style="color: blue;">download Lava Template</span> from our websites <br>
+    Duis viverra, ipsum et scelerisques placerat,orci magna <br>
+    consequat ligula.</p>
+    <img class="cl_0 cl_3" src="./assets/about-icon-01.png" alt="">
+    <p style="margin-left: 560px; font-size: 1.1rem; font-style: inherit;  margin-top: -530px;">Aenean faucibus venenatis</p>
+    <p style="opacity: 0.7; margin-top: -495px; margin-left: 560px;">Phasellus in imperdiet falis, eget vestibulum nulla. <br>
+    Aliquam nec dui nec augue maximus porta. Curabitur <br>
+    tristique</p>
+    </div>
+    <h1 class="h12">What They think <span class="spn" style="color: orange;">About Us</span></h1>
+    <p class="p10" style="opacity: 0.5; margin-top: 530px; margin-left: 190px;">Suspendisse vitae laoreet mauris.Fusce a nisi dapibus, euismod purus non, convallis odio. Donec <br>
+    <Span style="margin-left: 140px;">vitae magna ornare,pellentesque ex vitae,aliquet urna.</Span></p>
+    <div class="container4">
+        <img class="img_3" src="./assets/right-bg-decor.png" alt="">
+    </div>
+    <div class="container5">
+        <p id="para4">
+            <img class="cl_4" src="./assets/testimonial-author-1.png" alt="">
+            <p class="star">* * * * *</p>
+            <p class="cl_5">Jonathan Smart</p>
+            <p class="cl_6">"Nullam hendrerit, elit a semper pharetra,<br>
+                ipsum nibh tristique, in tempus urna <br>
+                <span style="margin-left: 100px;">elit in mauris</span> "<br><br>
+            <span style="margin-left: 100px;">Besto CTO</span></p>
+        </p>
+        <p id="para4">
+            <img class="cl_4" src="./assets/testimonial-author-1.png" alt="">
+            <p class="star1">* * * * *</p>
+            <p class="cl_7">Martino Tino</p>
+            <p class="cl_8">
+                "Morbi non mi luctus felis molestie <br>
+                <span style="margin-left: -43px;">scelerisque. In ac libero viverro, placerat est </span><br>
+                <span style="margin-left: 30px;">interdum, rhoncos leo"</span><br><br>
+                <span style="margin-left: 70px;">Web Analyst</span>
+            </p>
+        </p>
+    </div>
+    <div>
+        <img id="cl_5"  src="./assets/footer-bg.png" alt="">
+        <p id="form">
+            <input name="f_n" style="height: 30px; width: 170px; margin-left: 15px; margin-top: 40px;" type="text" placeholder="Full Name" class="input1">
+            <input style="height: 30px; width: 170px; margin-left: 10px; margin-top: 40px;" type="text" placeholder="Email" class="input2">
+            <textarea style="min-width: 50px;margin-top: 10px;margin-left:5px ; width: 380px; height: 100px;" name="Your Message" placeholder="Your Message" ></textarea>
+            <input style="border: 1px solid; height: 40px; width: 200px; border-radius: 30px; background-color: orange; color: white; margin-left: 90px; margin-top: 20px;" type="submit" value="SEND YOUR MESSAGE">
+        </p>
+        
+    </div>
+    <div>
+        <h2 class="cl10">More About <span style=" color: orange; ">Lava</span></h2>
+        <p id="para">Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. <br>
+            Duis at finibus odio. Vivamus ut pharetra arcu, in porta metus. <br>
+            Suspendisse blandit pulvinar ligula ut elementum.
+            <br><br>
+            If you need this contact form to send email to your inbox, you may <br>
+            follow our contact page for more detail.</p>
+    </div>
+    <div class="container6">
+        <svg class="svg1 svg11" fill="#000000" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M272.8,560.7 c-20.8,20.8-44.9,37.1-71.8,48.4c-27.8,11.8-57.4,17.7-88,17.7c-30.5,0-60.1-6-88-17.7c-26.9-11.4-51.1-27.7-71.8-48.4 c-20.8-20.8-37.1-44.9-48.4-71.8C-107,461.1-113,431.5-113,401s6-60.1,17.7-88c11.4-26.9,27.7-51.1,48.4-71.8 c20.9-20.8,45-37.1,71.9-48.5C52.9,181,82.5,175,113,175s60.1,6,88,17.7c26.9,11.4,51.1,27.7,71.8,48.4 c20.8,20.8,37.1,44.9,48.4,71.8c11.8,27.8,17.7,57.4,17.7,88c0,30.5-6,60.1-17.7,88C309.8,515.8,293.5,540,272.8,560.7z"></path> <path d="M146.8,313.7c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H51.2v38.3h26.5v133h49.6v-133h39.3l2.9-38.3h-42.2v-29.9C127.3,317.4,136.5,313.7,146.8,313.7z"></path> </g> </g></svg>
+        <svg class="svg1 svg11" fill="#000000" height="50px" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M437.019,74.981C388.667,26.628,324.379,0,256,0S123.333,26.628,74.981,74.981C26.628,123.333,0,187.621,0,256 s26.628,132.667,74.981,181.019C123.333,485.372,187.621,512,256,512s132.667-26.628,181.019-74.981S512,324.379,512,256 S485.372,123.333,437.019,74.981z M256,495.832C123.756,495.832,16.168,388.244,16.168,256S123.756,16.168,256,16.168 S495.832,123.756,495.832,256S388.244,495.832,256,495.832z"></path> </g> </g> <g> <g> <path d="M436.352,162.391c-2.433-2.104-5.958-2.463-8.875-1.11c-4.183,1.94-8.457,3.644-12.806,5.107 c4.313-5.884,7.758-12.422,10.188-19.432c1.002-2.891,0.503-6.176-1.569-8.427c-2.593-2.814-6.723-3.406-9.963-1.56 c-11.815,6.733-24.558,11.306-37.931,13.618c-14.958-13.729-34.201-21.24-54.643-21.24c-42.313,0-77.147,32.642-80.648,74.065 c-8.741-1.364-25.844-6.241-29.933-7.578c-29.581-10.075-56.228-27.814-77.075-51.307c-1.236-1.393-2.864-2.429-4.695-2.764 c-3.68-0.672-7.171,1.186-8.745,4.339c-5.181,10.383-7.809,21.548-7.809,33.185c0,16.093,5.038,31.261,14.113,43.73 c-2.828-0.531-5.838,0.462-7.812,2.89c-1.135,1.396-1.703,3.168-1.77,4.966c-0.03,0.82-0.057,1.643-0.057,2.472 c0,21.817,9.99,41.646,26.136,54.588c-1.115,0.755-2.055,1.797-2.703,3.082c-0.963,1.904-1.07,4.143-0.434,6.178 c7.052,22.559,24.572,39.739,46.292,46.781c-19.673,11.976-42.429,18.434-65.679,18.434c-2.053,0-4.166-0.053-6.279-0.156 c-4.046-0.185-7.675,2.639-8.371,6.744c-0.568,3.349,1.162,6.698,4.087,8.423c29.718,17.529,63.734,26.792,98.39,26.792 c41.361,0,80.758-12.881,113.607-36.725c4.052-2.942,4.499-8.821,0.959-12.362l-0.003-0.003 c-2.852-2.852-7.338-3.159-10.605-0.793c-29.275,21.198-65.207,33.714-103.959,33.714c-21.719,0-43.162-3.968-63.255-11.61 c24.303-4.268,47.275-14.808,66.409-30.712c2.312-1.922,3.529-4.962,2.947-7.911c-0.744-3.767-3.972-6.43-7.707-6.535 c-19.686-0.558-37.26-11.435-46.698-28.06c4.501-0.216,9.006-0.832,13.44-1.841c3.382-0.77,6.119-3.472,6.559-6.913 c0.529-4.142-2.134-7.925-6.085-8.897c-21.117-5.2-36.647-22.364-40.14-43.256c6.19,1.451,12.624,2.092,19.047,1.896 c3.963-0.119,7.317-3.109,7.792-7.166c0.374-3.196-1.323-6.291-4.07-7.966c-17.529-10.682-27.985-29.272-27.985-49.783 c0-5.014,0.623-9.917,1.859-14.665c21.193,20.954,46.914,36.922,75.086,46.518c0.258,0.088,28.093,8.754,38.636,8.797 c0.688,0.017,3.975,0.162,3.98,0.162c3.388,0.137,6.673-1.919,7.953-5.326c0.368-0.978,0.502-2.03,0.477-3.074 c-0.011-0.471-0.023-0.942-0.023-1.416c0-35.713,29.055-64.768,64.769-64.768c17.487,0,33.878,6.872,46.158,19.348 c1.777,1.807,4.282,2.697,6.793,2.349c8.227-1.141,16.256-3.025,24.037-5.632c-4.142,4.544-9.025,8.437-14.502,11.504 c-3.692,2.067-5.258,6.558-3.518,10.415l0.119,0.264c1.424,3.152,4.691,5.045,8.136,4.72c6.687-0.638,13.282-1.739,19.753-3.291 c-5.725,5.904-12.02,11.267-18.849,16.051c-2.228,1.561-3.509,4.147-3.416,6.865l0.017,0.511c0.019,0.553,0.04,1.107,0.04,1.664 v0.731c-0.186,45.29-17.461,86.654-45.668,117.994c-2.882,3.201-2.702,8.117,0.344,11.163c3.312,3.312,8.72,3.151,11.855-0.332 c31.691-35.208,49.224-80.18,49.633-127.902c14.422-10.743,26.595-23.876,36.227-39.093 C440.029,169.5,439.434,165.057,436.352,162.391z"></path> </g> </g> </g></svg>
+        <svg class="svg1 svg11" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21.903 21.903" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#030104;" d="M2.67,1.211c0.682,0,1.216,0.215,1.604,0.643S4.87,2.822,4.898,3.469 c0,0.639-0.218,1.178-0.657,1.616C3.802,5.522,3.202,5.741,2.443,5.741H2.416c-0.741,0-1.328-0.219-1.765-0.656 C0.219,4.647,0,4.108,0,3.469c0-0.657,0.238-1.197,0.718-1.622C1.198,1.423,1.85,1.211,2.67,1.211z M0.287,7.535H4.97v13.156H0.287 V7.535z M21.903,13.148v7.543h-4.682v-7.036c0-0.895-0.184-1.612-0.55-2.158c-0.364-0.541-0.973-0.812-1.833-0.812 c-0.655,0-1.181,0.166-1.573,0.5c-0.393,0.332-0.678,0.699-0.85,1.102c-0.056,0.146-0.091,0.307-0.11,0.486 c-0.018,0.176-0.026,0.367-0.026,0.568v7.351H7.568c0.02-2.226,0.031-4.268,0.031-6.12v-2.339v-2.125 c0-0.647-0.007-1.199-0.018-1.657C7.575,7.997,7.568,7.69,7.568,7.535h4.711v1.863l-0.026,0.054h0.026V9.398 c0.146-0.229,0.333-0.468,0.561-0.719c0.231-0.25,0.507-0.484,0.843-0.7c0.333-0.214,0.734-0.39,1.204-0.533 c0.473-0.141,1.011-0.211,1.624-0.211c0.762,0,1.474,0.116,2.138,0.349c0.662,0.233,1.231,0.598,1.715,1.096 c0.481,0.495,0.858,1.111,1.132,1.847C21.769,11.261,21.903,12.135,21.903,13.148z"></path> </g> </g></svg>
+        <svg class="svg1 svg11"  fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 365.892 365.892" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <circle cx="182.945" cy="286.681" r="41.494"></circle> <path d="M182.946,176.029c-35.658,0-69.337,17.345-90.09,46.398c-5.921,8.288-4.001,19.806,4.286,25.726 c3.249,2.321,6.994,3.438,10.704,3.438c5.754,0,11.423-2.686,15.021-7.724c13.846-19.383,36.305-30.954,60.078-30.954 c23.775,0,46.233,11.571,60.077,30.953c5.919,8.286,17.437,10.209,25.726,4.288c8.288-5.92,10.208-17.438,4.288-25.726 C252.285,193.373,218.606,176.029,182.946,176.029z"></path> <path d="M182.946,106.873c-50.938,0-99.694,21.749-133.77,59.67c-6.807,7.576-6.185,19.236,1.392,26.044 c3.523,3.166,7.929,4.725,12.32,4.725c5.051-0.001,10.082-2.063,13.723-6.116c27.091-30.148,65.849-47.439,106.336-47.439 s79.246,17.291,106.338,47.438c6.808,7.576,18.468,8.198,26.043,1.391c7.576-6.808,8.198-18.468,1.391-26.043 C282.641,128.621,233.883,106.873,182.946,106.873z"></path> <path d="M360.611,112.293c-47.209-48.092-110.305-74.577-177.665-74.577c-67.357,0-130.453,26.485-177.664,74.579 c-7.135,7.269-7.027,18.944,0.241,26.079c3.59,3.524,8.255,5.282,12.918,5.281c4.776,0,9.551-1.845,13.161-5.522 c40.22-40.971,93.968-63.534,151.344-63.534c57.379,0,111.127,22.563,151.343,63.532c7.136,7.269,18.812,7.376,26.08,0.242 C367.637,131.238,367.745,119.562,360.611,112.293z"></path> </g> </g></svg>
+        <svg class="svg1 svg11"  height="50px" width="30px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M86.258,447.65l-0.984-0.883c-0.025-0.008-0.042-0.025-0.058-0.042L86.258,447.65z"></path> <path class="st0" d="M512,256c0-18.183-1.918-35.942-5.583-53.066l0.008,0.067C486.091,106.192,411.208,29.667,315.316,6.942 l0.3,0.075l-0.242-0.066C296.291,2.367,276.35,0,256,0c-24.925,0-49.101,3.558-72,10.342l0.416-0.125l-0.342,0.1 c-42.2,12.267-79.775,35.142-109.908,65.458C28.274,122-0.008,185.767,0,256c0,8.342,0.366,16.675,1.191,24.992v-0.033 c6.4,65.65,37.6,124.092,84.008,165.75l0.075,0.058C130.558,487.3,190.441,512.008,256,512c34.975,0,68.475-7.033,98.95-19.849 l-0.017,0.008C407.525,470.1,451.099,431.1,478.899,381.9c-0.008,0.008-0.008,0.026-0.016,0.033l0.316-0.558l-0.292,0.508 C500.017,344.666,512.008,301.634,512,256z M202.9,64.4c2.058-9.534,4.242-18.134,6.167-25.266 c15.116-3.284,30.799-5.001,46.933-5.001c13.308,0,26.375,1.167,39.025,3.426c-14.409,13.308-28.8,29.141-46.65,43.375 c-14.559,11.6-31.35,22.1-52.2,29.492C197.183,94.817,199.824,78.658,202.9,64.4z M195.625,130.334 c36.291-11.334,62.082-31.351,82.516-50.417c11.2-10.451,20.908-20.584,29.975-28.901c3.242-2.991,6.383-5.624,9.475-8.066 c65.892,18.958,119.2,67.766,144.358,130.834c-13.524-5.392-28.65-9.9-45.059-13.45c-28.225-6.083-60.091-9.375-93.258-9.383 c-38.967,0.008-79.724,4.558-118.383,14.642l-0.024,0.008c-2.6,0.684-5.125,1.45-7.684,2.183c-0.159-1.283-0.342-2.6-0.475-3.842 c-1.184-10.766-1.45-21.584-1.45-32.474C195.616,131.092,195.625,130.708,195.625,130.334z M98.391,99.833 c24.858-25.025,55.526-44.024,89.792-54.967c-1.208,4.834-2.442,10.034-3.634,15.575c-3.625,16.825-6.741,36.317-7.409,55.409 c-0.116,0.016-0.258,0.058-0.374,0.075l-0.05,0.009c-6.983,1.133-13.808,1.674-20.442,1.674 c-22.042-0.016-41.95-6.066-58.766-16.841C97.808,100.467,98.092,100.134,98.391,99.833z M34.133,256 c0.008-53.675,18.95-102.716,50.608-141.066c20.375,13.783,44.933,21.467,71.533,21.45c6.75,0,13.65-0.583,20.625-1.574 c0.05,10.142,0.334,20.524,1.5,31.166c0.275,2.492,0.6,4.958,0.925,7.408c-31.392,10.616-63.092,26.442-91.076,46.458 c-20.433,14.642-38.85,31.533-53.633,50.308C34.324,265.484,34.133,260.784,34.133,256z M95.691,409.3 c-28.958-30.317-49.433-68.742-57.616-111.542c14.475-23.283,35.958-44.676,61.1-62.65c25.35-18.142,54.292-32.808,82.867-42.817 c3.491,22.424,8.2,44.125,13.933,64.983c-39.15,23.376-62.475,57.742-77.475,90.259c-7.942,17.175-13.683,33.883-18.417,48.317 C98.516,400.65,97.074,405.075,95.691,409.3z M256,477.867c-55.676-0.009-106.309-20.458-145.325-54.267 c2.3-6.641,4.625-13.941,7.242-21.908c6.984-21.326,15.925-46.6,30.342-70.325c12.725-20.925,29.566-40.559,53.142-55.617 c25.892,82.366,68.291,150.175,119.8,192.366C300.591,474.458,278.691,477.867,256,477.867z M449.2,365.083l-0.292,0.517 l0.275-0.492c-24.042,42.558-61.792,76.367-107.233,95.467c-52.134-38.6-97.184-107.509-123.55-193.342 c8.126-3.141,16.525-5.858,25.416-7.775c9.458-2.042,18.867-2.974,28.225-2.974c40.9-0.067,81.358,18.1,117.142,39.95 c17.892,10.9,34.583,22.65,49.633,33.308c7.3,5.158,14.183,10.042,20.692,14.484C456.4,351.367,453.016,358.35,449.2,365.083z M466.491,326.234c-5.299-3.675-10.866-7.592-16.824-11.817C427.033,298.408,400,279.367,370,264.208 c-29.992-15.133-63.1-26.483-97.958-26.5c-10.616,0-21.374,1.058-32.191,3.4c-9.208,1.983-18.018,4.809-26.625,8.033 c-5.401-20.092-9.801-41.008-13.05-62.591c3.267-0.959,6.525-1.925,9.833-2.801l-0.025,0.008 c36.875-9.625,76.15-14.033,113.65-14.033c31.917,0,62.559,3.191,89.3,8.967c22.308,4.8,41.85,11.466,57.116,19.324 c1.067,3.966,2.126,7.95,2.976,12l0.008,0.058v0.009c3.167,14.783,4.834,30.133,4.834,45.916 C477.858,280.567,473.866,304.167,466.491,326.234z"></path> </g> </g></svg>
+    </div>
+    <br>
+    <p id="copy">Copyright © 2020 Lava Landing Page | Designed by TemplateMo</p>
+    <div>
+        <svg class="id0 id1" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z" fill="#000000"></path></g></svg>
+        <svg class="id0 id2" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000"></path></g></svg>
+    </div>
+</body>
+</html>
