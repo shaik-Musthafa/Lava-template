@@ -1,4 +1,4 @@
-@media screen and (min-width:325px) and (max-width:425px){
+@media screen and (min-width:725px) and (max-width:1020px){
         body{
             width: 850px;
         }
@@ -828,7 +828,7 @@
     margin-top: 100px;
    }
 }
-@media screen and (min-width:725px) and (max-width:1020px){
+@media screen and (min-width:325px) and (max-width:425px){
     body{
         width: 850px;
     }
